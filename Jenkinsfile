@@ -31,6 +31,10 @@ pipeline {
         sh '''hostname
 whoami
 env'''
+        node(label: 'aws-elastic-t2-micro')
+        sh '''whoami
+env
+hostname'''
       }
     }
   }
