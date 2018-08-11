@@ -27,6 +27,9 @@ hostname'''
     stage('Send_Reports') {
       steps {
         sleep 5
+        sh '''env
+whoami
+hostname'''
       }
     }
     stage('AWS') {
