@@ -32,7 +32,10 @@ pipeline {
 whoami
 env'''
         node(label: 'aws-elastic-t2-micro') {
-          sh 'echo "in a child step"'
+          sh '''echo "in a child step"
+hostname
+whoami
+env'''
         }
         
         sh '''whoami
