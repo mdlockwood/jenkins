@@ -10,5 +10,6 @@ pipeline {
       steps {
         echo "hello"
       }
+    }
   }
 }
