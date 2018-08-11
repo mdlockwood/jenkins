@@ -6,5 +6,9 @@ pipeline {
         git(url: 'https://github.com/mdlockwood/jenkins', branch: 'master')
       }
     }
+    stage('Test') {
+      steps {
+        echo "hello"
+      }
   }
 }
