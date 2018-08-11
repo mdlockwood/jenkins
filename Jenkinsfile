@@ -4,6 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         git(url: 'https://github.com/mdlockwood/jenkins', branch: 'master')
+        sh '''env
+whoami
+hostname'''
       }
     }
     stage('Test') {
