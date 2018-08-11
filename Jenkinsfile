@@ -28,7 +28,6 @@ pipeline {
     }
     stage('AWS') {
       steps {
-        node(label: 'aws-permanent-t2-micro')
         sh '''hostname
 whoami
 env'''
