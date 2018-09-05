@@ -43,7 +43,7 @@ hostname
 whoami
 env'''
         }
-        
+
         sh '''whoami
 env
 hostname'''
